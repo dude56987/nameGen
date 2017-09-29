@@ -1,0 +1,10 @@
+Package: namegen
+Version: 0.0.1
+Section: games
+Maintainer: Carl J Smith <BM-NBHLt5EUFVEbRCmrbVrfCyaB2c8d24U9>
+Installed-Size: 64
+Priority: optional
+Architecture: all
+Depends: python
+Description: Generate a random username.
+ Generate random usernames with a customized list of adjectives and nouns.

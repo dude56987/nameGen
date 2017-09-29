@@ -3,7 +3,7 @@ NameGen
 
 Generate a randomized username in the format "Adjective + Noun + Random Number"
 
-##Usage
+## Usage
 
 - --help
   - Display NameGen help

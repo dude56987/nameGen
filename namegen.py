@@ -1,7 +1,7 @@
 #! /usr/bin/python
 ########################################################################
 # Generates a random username using word lists
-# Copyright (C) 2016  Carl J Smith
+# Copyright (C) 2017  Carl J Smith
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -74,8 +74,8 @@ class nameGen():
 		'''
 		if "--stats" in arguments:
 			# load up the config files
-			adj = self.pullConfig("adj.conf")
-			noun = self.pullConfig("noun.conf")
+			adj = self.pullConfig("/etc/namegen/adj.conf")
+			noun = self.pullConfig("/etc/namegen/noun.conf")
 			# set the number of times to run the test in order to
 			# generate statistics
 			testNames = 50000
@@ -109,8 +109,8 @@ class nameGen():
 			if "--help" in arguments:
 				self.showHelp()
 			# load config files
-			adj = self.pullConfig("adj.conf")
-			noun = self.pullConfig("noun.conf")
+			adj = self.pullConfig("/etc/namegen/adj.conf")
+			noun = self.pullConfig("/etc/namegen/noun.conf")
 			# randomly pick a line from each config file
 			adjIndex = randrange(0,len(adj))
 			nounIndex = randrange(0,len(noun))
